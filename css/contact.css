@@ -127,4 +127,9 @@ input[type=checkbox]{
   display: block;
  }
 
+ .contact-content tr td .d a{
+  font-family: strecthpro;
+  font-size: 10px;
+}
+
 }
