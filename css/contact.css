@@ -1,0 +1,135 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@font-face{
+  font-family: strecthpro;
+  src: url(../fonts/StretchPro.otf);
+}
+
+/* NAVBAR STYLING STARTS */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: rgb(0, 0, 0);
+  color: #fff;
+ }
+ .nav-links a {
+  font-family: strecthpro;
+  color: #fff;
+  text-decoration: none;
+ }
+ /* LOGO */
+ .logo img{
+  width: 100px;
+  border-radius: 50%;
+ }
+ /* NAVBAR MENU */
+ .menu {
+  display: flex;
+  gap: 1em;
+  font-size: 18px;  
+ }
+
+ .menu li a:hover {
+  color: #F4DF4E;
+  border-radius: 5px;
+  transition: 0.3s ease;
+ }
+ .menu li {
+  padding: 5px 14px;
+  list-style: none;
+ }
+
+ .contact{
+  margin: 5%;
+ }
+
+ .contact .head-separator{
+  border: 5px solid #ffdd00;
+ }
+
+ .contact .page-head h2{
+  font-family: strecthpro;
+ }
+
+ .contact-content{
+  display: flex;  
+  flex-direction: column;
+  
+ }
+
+ .contact-content tr td .d a{
+  font-family: strecthpro;
+}
+
+ .contact-content tr td a{
+  text-decoration: none;
+  color: black;
+ }
+
+ .contact-content tr td h6{
+  font-family: strecthpro;
+ }
+
+ .contact-content td td a:hover{
+  color: #F4DF4E;
+ }
+
+ .contact-content .button a{
+  color: white;
+ }
+
+
+  /*RESPONSIVE NAVBAR MENU STARTS*/
+/* CHECKBOX HACK */
+input[type=checkbox]{
+  display: none;
+ } 
+ /*HAMBURGER MENU*/
+ .hamburger {
+  display: none;
+  font-size: 24px;
+  user-select: none;
+ }
+ 
+ /* APPLYING MEDIA QUERIES */
+ @media (max-width: 768px) {
+ .menu { 
+  display:none;
+  position: absolute;
+  background-color:rgb(0, 0, 0);
+  right: 0;
+  left: 0;
+  text-align: center;
+  padding: 16px 0;  
+ }
+ .menu li:hover {
+  display: inline-block;
+  background-color:#4c9e9e;
+  transition: 0.3s ease;
+ }
+ .menu li + li {
+  margin-top: 12px;
+ }
+ input[type=checkbox]:checked ~ .menu{
+  display: block;
+  z-index: 1;
+  transform: translateY(0);
+  transition-delay: 0.3s;
+
+ }
+ .hamburger {
+  display: block;
+ }
+
+ .contact-content tr td .d a{
+  font-family: strecthpro;
+  font-size: 10px;
+}
+
+}

@@ -1,0 +1,244 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@font-face{
+  font-family: strecthpro;
+  src: url(../fonts/StretchPro.otf);
+}
+
+.container{
+  margin: 5%;
+}
+
+.clear{
+  clear: both;
+  height: 100px;
+}
+/* NAVBAR STYLING STARTS */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: rgb(0, 0, 0);
+  color: #fff;
+ }
+ .nav-links a {
+  font-family: strecthpro;
+  color: #fff;
+  text-decoration: none;
+ }
+ /* LOGO */
+ .logo img{
+  width: 100px;
+  border-radius: 50%;
+ }
+ /* NAVBAR MENU */
+ .menu {
+  display: flex;
+  gap: 1em;
+  font-size: 18px;  
+ }
+
+ .menu li a:hover {
+  color: #F4DF4E;
+  border-radius: 5px;
+  transition: 0.3s ease;
+ }
+ .menu li {
+  padding: 5px 14px;
+  list-style: none;
+ }
+
+ .container-header{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+ }
+
+ .header{
+  margin-top: 20px;
+ }
+
+ .header img{
+  border-radius: 50%;
+  width: 300px;
+ }
+
+ .header h1{  
+  font-size: 50px;
+  font-family: strecthpro;
+  font-weight: 100;
+ }
+
+ .header h2{
+  font-size: 15px;
+  font-family: strecthpro;
+  font-weight: 200;  
+ }
+
+ .container-about{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin-top: 50px;
+  align-items: center;
+  flex-direction: column;
+ }
+
+ .about-judul h1{
+  color: #F4DF4E;
+  font-family: strecthpro;
+  font-weight: 600;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+ }
+
+ .about-items{
+  gap: 40px;
+  width: 90%;
+  display: flex;
+  text-align: center;
+  line-height: 1.6;
+  font-weight: 400;
+ }
+
+ .more{
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+ }
+
+ .more a{
+  text-decoration: none;
+  font-size: 15px;
+  font-family: strecthpro;
+  color: rgb(0, 0, 0);
+ }
+
+ .more a:hover {
+  color: #F4DF4E;  
+  border-radius: 5px;
+  transition: 0.3s ease;
+ }
+
+ /*RESPONSIVE NAVBAR MENU STARTS*/
+/* CHECKBOX HACK */
+input[type=checkbox]{
+  display: none;
+ } 
+ /*HAMBURGER MENU*/
+ .hamburger {
+  display: none;
+  font-size: 24px;
+  user-select: none;
+ }
+ 
+ /* APPLYING MEDIA QUERIES */
+ @media (max-width: 768px) {
+ .menu { 
+  display:none;
+  position: absolute;
+  background-color:rgb(0, 0, 0);
+  right: 0;
+  left: 0;
+  text-align: center;
+  padding: 16px 0;
+ }
+ .menu li:hover {
+  display: inline-block;
+  background-color:#4c9e9e;
+  transition: 0.3s ease;
+ }
+ .menu li + li {
+  margin-top: 12px;
+ }
+ input[type=checkbox]:checked ~ .menu{
+  display: block;
+ }
+ .hamburger {
+  display: block;
+ }
+ /* bagian content-pertama */
+ .container-header{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+ }
+
+ .header{
+  margin-top: 20px;
+ }
+
+ .header img{
+  border-radius: 50%;
+  width: 150px;
+ }
+
+ .header h1{  
+  font-size: 25px;  
+  font-family: strecthpro;
+  font-weight: 200;
+ }
+
+ .header h2{
+  font-size: 10px;
+  font-family: strecthpro;
+  font-weight: 200;  
+ }
+ /* bagian container-kedua */
+ .container-about{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin-top: 50px;
+  align-items: center;
+  flex-direction: column;
+ }
+
+ .about-judul h1{
+  color: #F4DF4E;
+  font-family: strecthpro;
+  font-size: 20px;
+  font-weight: 600;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+ }
+
+ .about-items{
+  gap: 40px;
+  width: 100%;
+  display: flex;
+  text-align: center;
+  line-height: 1.6;
+  font-weight: 400;
+  font-size: 15px;
+ }
+ /* bagian container-ketiga */
+ .more{
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+ }
+
+ .more a{
+  text-decoration: none;
+  color: #F4DF4E;
+ }
+}
